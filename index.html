@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Availability Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Employee Availability Form</h1>
+    
+    <form class="availability-form" action="https://formspree.io/f/xwvkpokb" method="POST">
+
+        <div class="info">
+            <p class="form-note">Please fill out the form below to indicate your availability for the upcoming week. This information will help us schedule shifts effectively.</p>
+        </div>
+
+        <div class="field">
+            <label><strong>Employee Name</strong>
+            <input type="text" name="name" required></label>
+        </div>
+        <div class="field">
+            <label><strong>Phone Number</strong>
+            <input type="tel" name="phone" required></label>
+        </div>
+        <div class="field">
+            <label><strong>Email Address</strong>
+            <input type="email" name="email" required></label>    
+        </div>
+
+        <h2>Weekly Availability</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td><input type="time" name="mon_from"></td>
+                    <td><input type="time" name="mon_to"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td><input type="time" name="tue_from"></td>
+                    <td><input type="time" name="tue_to"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td><input type="time" name="wed_from"></td>
+                    <td><input type="time" name="wed_to"></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td><input type="time" name="thu_from"></td>
+                    <td><input type="time" name="thu_to"></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td><input type="time" name="fri_from"></td>
+                    <td><input type="time" name="fri_to"></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td><input type="time" name="sat_from"></td>
+                    <td><input type="time" name="sat_to"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td><input type="time" name="sun_from"></td>
+                    <td><input type="time" name="sun_to"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Days & Hours I Can't Work</h2>
+        <textarea name="unavailable_hours" placeholder="Example: Wednesdays after 4 PM"></textarea>
+
+        <h2>Additional Notes</h2>
+        <textarea name="additional_notes" placeholder="Any additional information..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Availability</button>
+
+    <p class="success-message" hidden>✅ Availability submitted successfully!</p>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
