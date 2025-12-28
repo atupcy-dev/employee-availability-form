@@ -5,6 +5,14 @@ The application includes client-side validation to ensure required fields are co
 
 This project demonstrates practical form handling, validation, third-party API integration, and modern JavaScript event management.
 
+## 🖼️ Screenshots
+
+### 📋 Employees Availability Table
+![Employees Availability Table](images/employees-table.png)
+
+### ✅ Availability Status View
+![Availability Status](images/employees-availability.png)
+
 ## 🛠️ Technologies Used
 
 HTML5 (semantic forms)
